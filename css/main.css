@@ -10,6 +10,7 @@ body {
 }
 h1 {
   color: #8DABB0;
+  font-size: 4em;
   font-weight: bold;
 }
 #location {
@@ -18,11 +19,11 @@ h1 {
 #temperature {
   font-size: 4em;
 }
-#temperature:hover {
-  cursor: pointer;
-}
 #unit {
   color: #B1E9E8;
+}
+#unit:hover {
+  cursor: pointer;
 }
 #desc {
   text-transform: capitalize;

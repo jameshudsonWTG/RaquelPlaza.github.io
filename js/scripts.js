@@ -1,3 +1,10 @@
+r(function(){
+  document.getElementById("loader").style.display = 'block';
+  document.getElementById('weather').style.display = 'none';
+});
+
+function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
+
 function getLocation() {
   var coordenates = {};
     if (navigator.geolocation) {
@@ -22,6 +29,8 @@ function loadDoc(coordenates) {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       parsed = JSON.parse(this.responseText);
+      document.getElementById('loader').style.display = 'none';
+      document.getElementById('weather').style.display = 'block';
       success(parsed);
     }
     
@@ -39,7 +48,7 @@ function success(result) {
       var tempCelsius = Math.round( parsed.main.temp);
       var unit = 'C';
 
-               document.getElementById("location").innerHTML = location + ', ' + country;
+      document.getElementById("location").innerHTML = location + ', ' + country;
       document.getElementById("temp").innerHTML = tempCelsius;
       document.getElementById("icon").src = icon;
       document.getElementById("desc").innerHTML = desc;
