@@ -17,10 +17,18 @@ $(document).ready(function() {
     countdown: true
   });
 
+  $("#preview").click(function(){
+    $(this).text(function(i, text){
+          return text === "Wanna see what happens when he goes?" ? "Quick! Click again to hide it!" : "Wanna see what happens when he goes?";
+      })
+    $("div.container").toggleClass("previewing");
+});
+
   // If the count down is over, write some text
   if (diff < 0) {
-      clearInterval(x);
-      gocument.getElementById("intro").style("hidden");
-      document.getElementById("counter").innerHTML = "Good Luck!";
+      $("#preview").hide();
+      $(".clock-container").hide();
+      document.getElementById("intro").innerHTML = "Good Luck J@m3s#!";
+      $("div.container").toggleClass("previewing");
   }
 });

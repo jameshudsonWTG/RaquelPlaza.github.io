@@ -39,7 +39,19 @@ h1 {
   transform: translate(-50%, -0%)
 }
 
-.container:hover {
+#preview {
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid green;
+  background: green;
+  position: relative;
+  top: 135px;
+}
+
+.container.previewing {
   background-color: #D4AF37;
   background-size: cover;
   background-image:url("../img/animated_fireworks.gif");
