@@ -42,7 +42,7 @@ h1 {
 .container:hover {
   background-color: #D4AF37;
   background-size: cover;
-  background-image:url("../img/animated_fireworks.jpg");
+  background-image:url("../img/animated_fireworks.gif");
   -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 5s; /* Firefox < 16 */
   -ms-animation: fadein 5s; /* Internet Explorer */
