@@ -1,20 +1,21 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/flipclock.css">
   </head>
   <body>
   <div class="container">
     <div class="row main">
-      <div class="col-md-3"></div>
-      <div class="col-md-6">
+      <div class="col-md-6 col-md-offset-3">
         <h1>James is leaving us in:</h1>
-        <div id="counter"></div>
-      </div>
+        <div class="clock-container">
+          <div class="clock"></div>
+        </div>
       </div>
     </div>
-    <div class="col-md-3"></div>  
   </div>
-  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/flipclock.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>
